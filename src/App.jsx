@@ -3,8 +3,18 @@ import styled, { ThemeProvider } from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 
+import Header from './components/Header';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Art from './pages/Art';
+import Design from './pages/Design';
+import Code from './pages/Code';
+
 
 library.add(fab, faLinkedin, faGithubSquare)
 
@@ -53,15 +63,29 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Grid>
-        <HeaderContainer>
-          header
-        </HeaderContainer>
-        <MainContainer>
-          main
-        </MainContainer>
-        <FooterContainer>
-          <Footer/>
-        </FooterContainer>
+        <Router>
+          <HeaderContainer>
+            <Header />
+          </HeaderContainer>
+          <MainContainer>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/art">
+              <Art />
+            </Route>
+            <Route path="/design">
+              <Design />
+            </Route>
+            <Route path="/code">
+              <Code />
+            </Route>
+          </MainContainer>
+          <FooterContainer>
+            <Footer />
+          </FooterContainer>
+        </Router>
+
       </Grid>
     </ThemeProvider>
   );
