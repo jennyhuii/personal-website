@@ -6,6 +6,7 @@ const StyledHeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
     padding-left: 1rem;
 `
 
