@@ -23,11 +23,12 @@ const StyledList = styled.ul`
     overflow: hidden;
     margin: 0;
     padding: 0;
+    align-content: center;
 `
 
 const StyledListItem = styled.li`
     float: left;
-    padding-right: 1.5rem;
+    padding-right: 2.4rem;
 `
 
 const Header = () => {

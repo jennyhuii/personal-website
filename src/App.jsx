@@ -27,7 +27,7 @@ const Grid = styled.div`
   grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
   grid-template-rows: [row1-start] 90px [row1-end] auto [third-line] 150px [last-line];
   background-color: black;
-  height: 100vh;
+  height: 110vh;
 `
 
 const HeaderContainer = styled.div`
