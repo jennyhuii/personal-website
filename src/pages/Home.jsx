@@ -1,12 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Headshot from '../images/headshot.png';
-
-
-const StyledMainContainer = styled.div`
-    align-content: center;
-    justify-content: center;
-`
+import { StyledMainContainer } from '../constants/Styles';
 
 const StyledMainTextContainer = styled.div`
     align-content: center;

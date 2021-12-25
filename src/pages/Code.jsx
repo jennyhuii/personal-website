@@ -1,8 +1,11 @@
 import React from 'react';
+import { StyledMainContainer } from '../constants/Styles';
 
 const Code = () => {
     return (
-        <p>Code</p>
+        <StyledMainContainer>
+            <p>Coming soon.</p>
+        </StyledMainContainer>
     )
 }
 
