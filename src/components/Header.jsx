@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const StyledHeaderContainer = styled.div`
     display: flex;
@@ -10,7 +10,22 @@ const StyledHeaderContainer = styled.div`
     padding-left: 1rem;
 `
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
+    text-decoration:none;
+    color: white;
+    &:hover {
+        color: #ADD8E6;
+      }
+    &.active {
+        &>h3{
+            padding-bottom: 5px;
+            border-bottom-style: solid;
+            width: fit-content;
+        }
+    }
+`
+
+const StyledHomeLink = styled(NavLink)`
     text-decoration:none;
     color: white;
     &:hover {
@@ -35,7 +50,7 @@ const Header = () => {
 
     return (
         <StyledHeaderContainer>
-            <StyledLink to="/"><h1>Jenny Hui</h1></StyledLink>
+            <StyledHomeLink to="/"><h1>Jenny Hui</h1></StyledHomeLink>
             <StyledList>
                 <StyledListItem><StyledLink to="/art"><h3>Art</h3></StyledLink></StyledListItem>
                 <StyledListItem><StyledLink to="/design"><h3>Design</h3></StyledLink></StyledListItem>

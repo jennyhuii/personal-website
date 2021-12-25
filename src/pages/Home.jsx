@@ -45,7 +45,7 @@ const Home = () => {
                 <StyledImage src={Headshot} />
                 <StyledText>
                     Based in New York City, I am a frontend engineer currently working for a startup.
-
+                    During my free time, I work on web design for nonprofits and build random web apps.
                 </StyledText>
             </StyledIntroContainer>
         </StyledMainContainer>
