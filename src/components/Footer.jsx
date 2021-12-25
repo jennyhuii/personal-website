@@ -14,27 +14,28 @@ const StyledIconContainer = styled.div`
 
 const IconContainer = styled.div`
     padding: 0.25rem;
-    &:hover>svg {
+    &>a {
+        color: white;
+    }
+    &:hover>a {
         cursor: pointer;
-        color: #ADD8E6;
+        color: #0000FF;
       }
 `
 
 const Footer = () => {
 
-    const openLink = (url) => window.open(url);
-
     return (
         <StyledFooterContainer>
             <h2>
-                Get in touch :)
+                Get in touch.
             </h2>
             <StyledIconContainer>
                 <IconContainer>
-                    <FontAwesomeIcon size='2x' icon={['fab', 'linkedin']} onClick={() => openLink('https://www.linkedin.com/in/jennyhui93')}/>
+                    <a href='https://www.linkedin.com/in/jennyhui93'><FontAwesomeIcon size='2x' icon={['fab', 'linkedin']}/></a>
                 </IconContainer>
                 <IconContainer>
-                    <FontAwesomeIcon size='2x' icon={['fab', 'github-square']} onClick={() => openLink('https://www.github.com/jennyhuii')}/>
+                <a href='https://www.github.com/jennyhuii'><FontAwesomeIcon size='2x' icon={['fab', 'github-square']}/></a>
                 </IconContainer>
             </StyledIconContainer>
 

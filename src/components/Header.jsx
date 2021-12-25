@@ -14,7 +14,7 @@ const StyledLink = styled(NavLink)`
     text-decoration:none;
     color: white;
     &:hover {
-        color: #ADD8E6;
+        color: #0000FF;
       }
     &.active {
         &>h3{
@@ -29,21 +29,20 @@ const StyledHomeLink = styled(NavLink)`
     text-decoration:none;
     color: white;
     &:hover {
-        color: #ADD8E6;
+        color: #0000FF;
       }
 `
 
 const StyledList = styled.ul`
     list-style-type: none;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
     align-content: center;
 `
 
 const StyledListItem = styled.li`
     float: left;
     padding-right: 2.4rem;
+    align-content: center;
 `
 
 const Header = () => {
