@@ -1,10 +1,13 @@
 import React from 'react';
-import { StyledMainContainer } from '../constants/Styles';
+import { StyledMainContainer, StyledImageContainer } from '../constants/Styles';
 
 const Art = () => {
     return (
         <StyledMainContainer>
-            <p>Coming soon.</p>
+            <StyledImageContainer>
+                
+            </StyledImageContainer>
+            
         </StyledMainContainer>
     )
 }
