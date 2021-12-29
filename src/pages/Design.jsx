@@ -1,9 +1,13 @@
 import React from 'react';
-import { StyledMainContainer } from '../constants/Styles';
+import {
+    StyledMainContainer,
+} from '../constants/Styles';
 
 const Design = () => {
     return (
         <StyledMainContainer>
+            <br/>
+            <br/>
             <p>Coming soon.</p>
         </StyledMainContainer>
     )

@@ -35,7 +35,7 @@ const Home = () => {
                 <StyledText>
                     Based in New York City, I am a frontend engineer currently working for a startup.
                     A few years ago, I taught myself how to code. I love art and technology. 
-                    My work includes paintings, product designs and random web apps built in javascript.
+                    My work includes paintings, product design and web apps built in javascript.
                     During my free time, I enjoy doing yoga and going on long walks.
                 </StyledText>
             </StyledImageContainer>
