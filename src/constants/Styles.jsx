@@ -14,8 +14,7 @@ export const StyledImageContainer = styled.div`
 `
 
 export const StyledText = styled.p`
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     font-size: 1.2rem;
     text-align: justify;
+    margin-top: 0;
 `

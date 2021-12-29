@@ -12,13 +12,15 @@ import Sunflowers from '../images/sunflowers.png';
 
 export const StyledImage = styled.img`
     height: ${props => props.height};
+    padding-left: ${props => props.paddingLeft};
 `
 
 const Art = () => {
     return (
         <StyledMainContainer>
+            <br/>
             <StyledImageContainer flexDirection={'row-reverse'}>
-                <StyledImage src={SundayPicnic} height={'22rem'} />
+                <StyledImage src={SundayPicnic} height={'22rem'} paddingLeft={'3rem'}/>
                 <StyledText>
                 My interest in art began at a very young age. I started drawing with color pencils and watercolor. 
                 In high school, I took my first painting class. One of my first paintings was a master copy of 
@@ -28,8 +30,8 @@ const Art = () => {
             </StyledImageContainer>
             <StyledImageContainer flexDirection={'row'}>
                 <StyledImage src={RedLily} height={'24rem'} />
-                <StyledImage src={Sunflowers} height={'24rem'}/>
-                <StyledImage src={WhiteLilies} height={'24rem'}/>
+                <StyledImage src={Sunflowers} height={'24rem'} paddingLeft={'3rem'}/>
+                <StyledImage src={WhiteLilies} height={'24rem'} paddingLeft={'3rem'}/>
             </StyledImageContainer>
         </StyledMainContainer>
     )

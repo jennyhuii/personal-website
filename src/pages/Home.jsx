@@ -21,10 +21,10 @@ const StyledMainText = styled.h3`
 
 export const StyledImage = styled.img`
     height: 20rem;
+    padding-right: 3rem;
 `
 
 const Home = () => {
-    console.log(window.innerWidth);
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
