@@ -7,7 +7,7 @@ import {
     StyledImage,
     StyledImageTitle
 } from '../constants/Styles';
-import DailyDriver from '../images/daily-driver-website.png';
+import DailyDriver from '../images/daily-driver-with-code.png';
 
 
 const StyledLink = styled.a`
