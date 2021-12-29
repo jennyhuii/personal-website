@@ -14,7 +14,7 @@ const StyledLink = styled(NavLink)`
     text-decoration:none;
     color: white;
     &:hover {
-        color: #0000FF;
+        color: #4f4fff;
       }
     &.active {
         &>h3{
@@ -29,7 +29,7 @@ const StyledHomeLink = styled(NavLink)`
     text-decoration:none;
     color: white;
     &:hover {
-        color: #0000FF;
+        color: #4f4fff;
       }
 `
 

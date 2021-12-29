@@ -19,7 +19,7 @@ const IconContainer = styled.div`
     }
     &:hover>a {
         cursor: pointer;
-        color: #0000FF;
+        color: #4f4fff;
       }
 `
 
