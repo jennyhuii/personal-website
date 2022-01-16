@@ -6,25 +6,29 @@ export const StyledMainContainer = styled.div`
     text-align: center;
 `;
 
-export const StyledImageContainer = styled.div`
-    display: flex;
-    flex-direction: ${props => props.flexDirection};
-    justify-content: space-between;
-    padding: 0 10rem 2rem 10rem;
+export const StyledMainTextContainer = styled.div`
+    align-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 `
 
-export const StyledImageTitle = styled.h3`
-    margin-top: 0;
+export const StyledMainText = styled.h3`
+    font-size: 2.4rem;
+`
+
+export const StyledContentContainer = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
 `
 
 export const StyledText = styled.p`
     font-size: 1.2rem;
     text-align: justify;
     margin-top: 0;
-`
-
-export const StyledSecondaryText = styled.p`
-    text-align: justify;
 `
 
 export const StyledImage = styled.img`

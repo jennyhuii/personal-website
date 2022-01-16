@@ -6,7 +6,7 @@ body {
 }
 
 div {
-  background-color: black;
+  background-color: #FAF9F6;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

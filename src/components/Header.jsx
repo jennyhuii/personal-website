@@ -12,12 +12,37 @@ const StyledHeaderContainer = styled.div`
 
 const StyledLink = styled(NavLink)`
     text-decoration:none;
-    color: white;
+    color: #000029;
     &:hover {
-        color: #4f4fff;
+        text-decoration:none;
+        &>h3 {
+        color: #899499;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        }
+    }
+    &.active {
+        &>h3 {
+            padding-bottom: 5px;
+            border-bottom-style: solid;
+            width: fit-content;
+        }
+    }
+`
+
+const StyledAnchor = styled.a`
+    text-decoration:none;
+    color: #000029;
+    &:hover {
+        text-decoration:none;
+        &>h3 {
+        color: #899499;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        }
       }
     &.active {
-        &>h3{
+        &>h3 {
             padding-bottom: 5px;
             border-bottom-style: solid;
             width: fit-content;
@@ -27,9 +52,14 @@ const StyledLink = styled(NavLink)`
 
 const StyledHomeLink = styled(NavLink)`
     text-decoration:none;
-    color: white;
+    color: #000029;
     &:hover {
-        color: #4f4fff;
+        text-decoration:none;
+        &>h1 {
+        color: #899499;
+        padding-bottom: 5px;
+        border-bottom-style: solid;
+        }
       }
 `
 
@@ -49,11 +79,11 @@ const Header = () => {
 
     return (
         <StyledHeaderContainer>
-            <StyledHomeLink to="/"><h1>Jenny Hui</h1></StyledHomeLink>
+            <StyledHomeLink to="/"><h1>JENNY HUI</h1></StyledHomeLink>
             <StyledList>
-                <StyledListItem><StyledLink to="/art"><h3>Art</h3></StyledLink></StyledListItem>
-                <StyledListItem><StyledLink to="/design"><h3>Design</h3></StyledLink></StyledListItem>
-                <StyledListItem><StyledLink to="/code"><h3>Code</h3></StyledLink></StyledListItem>
+                <StyledListItem><StyledLink to="/my-work"><h3>My Work</h3></StyledLink></StyledListItem>
+                <StyledListItem><StyledAnchor href='https://www.linkedin.com/in/jennyhui93'><h3>LinkedIn</h3></StyledAnchor></StyledListItem>
+                <StyledListItem><StyledAnchor href='https://www.github.com/jennyhuii'><h3>Github</h3></StyledAnchor></StyledListItem>
             </StyledList>
         </StyledHeaderContainer>
     )
