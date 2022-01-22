@@ -20,47 +20,26 @@ const theme = {
   main: "black-and-white"
 };
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-  grid-template-rows: [row1-start] 90px [row1-end] auto [third-line] 150px [last-line];
-  background-color: #FAF9F6;
-  height: 110vh;
-`
-
 const HeaderContainer = styled.div`
-  grid-column-start: 1;
-  grid-column-end: end;
-  grid-row-start: row1-start;
-  grid-row-end: 1;
-  color: #000029;
   padding: 0.75rem;
+  height: 90px;
 `
 
 const MainContainer = styled.div`
-  grid-column-start: 1;
-  grid-column-end: end;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  color: #000029;
   justify-self: stretch;
-  padding: 0.75rem;
+  padding: 1rem;
 `
 
 const FooterContainer = styled.div`
-  grid-column-start: 1;
-  grid-column-end: end;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  color: #000029;
   justify-self: stretch;
-  padding: 0.75rem;
+  padding-bottom: 1rem;
+  height: 70px;
 `
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Grid>
+      <div>
         <Router>
           <HeaderContainer>
             <Header />
@@ -77,8 +56,7 @@ const App = () => {
             <Footer />
           </FooterContainer>
         </Router>
-
-      </Grid>
+      </div>
     </ThemeProvider>
   );
 }

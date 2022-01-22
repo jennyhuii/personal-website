@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Headshot from '../images/headshot.png';
 import { 
     StyledMainContainer, 
@@ -7,11 +6,10 @@ import {
     StyledMainTextContainer,
     StyledText,
     StyledMainText,
+    AlignCenterContainer,
+    StyledImage
  } from '../constants/Styles';
 
-export const StyledImage = styled.img`
-    height: 20rem;
-`
 
 const Home = () => {
     return (
@@ -20,7 +18,7 @@ const Home = () => {
                 <StyledMainText>Artist & Engineer</StyledMainText>
             </StyledMainTextContainer>
             <StyledContentContainer>
-                <StyledImage src={Headshot} />
+                <AlignCenterContainer><StyledImage src={Headshot} height={'20rem'} /></AlignCenterContainer>
                 <StyledText>
                     Based in New York City, I am a frontend engineer currently working for a startup.
                     I am also a painter who loves painting landscape and plants.

@@ -7,16 +7,15 @@ const StyledHeaderContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    padding-left: 1rem;
+    padding: 0 1.5rem 0 1.5rem;
 `
 
 const StyledLink = styled(NavLink)`
     text-decoration:none;
-    color: #000029;
     &:hover {
         text-decoration:none;
         &>h3 {
-        color: #899499;
+        color: #bed4e9;
         padding-bottom: 5px;
         border-bottom-style: solid;
         }
@@ -32,11 +31,10 @@ const StyledLink = styled(NavLink)`
 
 const StyledAnchor = styled.a`
     text-decoration:none;
-    color: #000029;
     &:hover {
         text-decoration:none;
         &>h3 {
-        color: #899499;
+        color: #bed4e9;
         padding-bottom: 5px;
         border-bottom-style: solid;
         }
@@ -52,11 +50,10 @@ const StyledAnchor = styled.a`
 
 const StyledHomeLink = styled(NavLink)`
     text-decoration:none;
-    color: #000029;
     &:hover {
         text-decoration:none;
         &>h1 {
-        color: #899499;
+        color: #bed4e9;
         padding-bottom: 5px;
         border-bottom-style: solid;
         }
@@ -79,7 +76,7 @@ const Header = () => {
 
     return (
         <StyledHeaderContainer>
-            <StyledHomeLink to="/"><h1>JENNY HUI</h1></StyledHomeLink>
+            <StyledHomeLink to="/"><h1>Jenny Hui</h1></StyledHomeLink>
             <StyledList>
                 <StyledListItem><StyledLink to="/my-work"><h3>My Work</h3></StyledLink></StyledListItem>
                 <StyledListItem><StyledAnchor href='https://www.linkedin.com/in/jennyhui93'><h3>LinkedIn</h3></StyledAnchor></StyledListItem>

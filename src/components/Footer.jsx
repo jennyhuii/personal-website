@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledFooterContainer = styled.div`
+    padding-top: 1rem;
     text-align: center;
 `
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import {
     StyledMainContainer,
     StyledContentContainer,
@@ -11,19 +12,31 @@ import SundayPicnic from '../images/sunday-picnic.png';
 import WhiteLilies from '../images/white-lilies.png';
 import Sunflowers from '../images/sunflowers.png';
 
+const StyledImageContainer = styled.div`
+    background-color: #FAF9F6;
+    padding: 2rem 1.25rem 2rem 1.25rem;
+    justify-content: center;
+`
+
 const Work = () => {
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
                 <StyledMainText>My Work</StyledMainText>
             </StyledMainTextContainer>
-            <StyledContentContainer flexDirection={'row-reverse'}>
-                <StyledImage src={SundayPicnic} height={'22rem'} paddingLeft={'3rem'} />
-                <StyledImage src={Sunflowers} height={'28rem'} paddingLeft={'3rem'} />
-            </StyledContentContainer>
-            <StyledContentContainer flexDirection={'row'}>
-                <StyledImage src={WhiteLilies} height={'28rem'} paddingRight={'3rem'} />
-                <StyledImage src={RedLily} height={'28rem'} paddingRight={'3rem'} />
+            <StyledContentContainer>
+                <StyledImageContainer>
+                    <StyledImage src={WhiteLilies} height={'28rem'} />
+                </StyledImageContainer>
+                <StyledImageContainer>
+                    <StyledImage src={RedLily} height={'28rem'} />
+                </StyledImageContainer>
+                <StyledImageContainer>
+                    <StyledImage src={SundayPicnic} height={'22rem'} />
+                </StyledImageContainer>
+                <StyledImageContainer>
+                    <StyledImage src={Sunflowers} height={'28rem'} />
+                </StyledImageContainer>
             </StyledContentContainer>
         </StyledMainContainer>
     )

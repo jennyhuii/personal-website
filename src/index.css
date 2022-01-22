@@ -3,10 +3,13 @@ body {
   font-family: 'Roboto Slab';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: auto;
+  background-color: #000000;
+  color: #FAF9F6;
 }
 
 div {
-  background-color: #FAF9F6;
+  background-color: #000000;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -15,6 +18,10 @@ div {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: #FAF9F6;
 }
 
 @keyframes fadeInAnimation {
