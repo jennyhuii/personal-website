@@ -79,8 +79,8 @@ const Header = () => {
             <StyledHomeLink to="/"><h1>Jenny Hui</h1></StyledHomeLink>
             <StyledList>
                 <StyledListItem><StyledLink to="/my-work"><h3>My Work</h3></StyledLink></StyledListItem>
-                <StyledListItem><StyledAnchor href='https://www.linkedin.com/in/jennyhui93'><h3>LinkedIn</h3></StyledAnchor></StyledListItem>
                 <StyledListItem><StyledAnchor href='https://www.github.com/jennyhuii'><h3>Github</h3></StyledAnchor></StyledListItem>
+                <StyledListItem><StyledAnchor href='https://www.linkedin.com/in/jennyhui93'><h3>LinkedIn</h3></StyledAnchor></StyledListItem>
             </StyledList>
         </StyledHeaderContainer>
     )

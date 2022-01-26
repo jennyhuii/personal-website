@@ -20,8 +20,8 @@ const Home = () => {
             <StyledContentContainer>
                 <AlignCenterContainer><StyledImage src={Headshot} height={'20rem'} /></AlignCenterContainer>
                 <StyledText>
-                    Based in New York City, I am a frontend engineer currently working for a startup.
-                    I am also a painter who loves painting landscape and plants.
+                    Based in New York City, I am a front-end engineer currently working for a startup.
+                    I am also a painter who loves painting landscapes and plants.
                     A few years ago, I taught myself how to code. 
                     My work includes paintings and web apps built in javascript.
                     During my free time, I enjoy practicing yoga and going on long walks.

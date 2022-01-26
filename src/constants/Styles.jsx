@@ -24,7 +24,7 @@ export const StyledContentContainer = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
 `
 

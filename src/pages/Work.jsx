@@ -13,8 +13,7 @@ import WhiteLilies from '../images/white-lilies.png';
 import Sunflowers from '../images/sunflowers.png';
 
 const StyledImageContainer = styled.div`
-    background-color: #FAF9F6;
-    padding: 2rem 1.25rem 2rem 1.25rem;
+    padding: 1rem 1rem 2rem 1rem;
     justify-content: center;
 `
 
