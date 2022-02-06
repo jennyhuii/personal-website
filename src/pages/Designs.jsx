@@ -13,7 +13,7 @@ const StyledText = styled.p`
 `
 
 const StyledImageContainer = styled.div`
-    padding: 0rem 1rem 2rem 1rem;
+    padding: 0rem 3rem 2rem 1rem;
     justify-content: center;
 `
 
@@ -24,7 +24,9 @@ const Designs = () => {
                 <h2>Digital Ad Manager</h2>
             </StyledMainTextContainer>
             <StyledContentContainer>
+                <StyledImageContainer>
                 <StyledImage src={AllCampaign} height={'20rem'} />
+                </StyledImageContainer>
                 <div>
                     <StyledText>
                         The founder of Cambrya developed an algorithm to optimize progressive political campaign outreach to constituents.

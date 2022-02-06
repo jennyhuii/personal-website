@@ -34,7 +34,7 @@ const MasterCopy = () => {
             </StyledContentContainer>
             <StyledText>
                 I spent 4 years painting this master
-                copy: <a href='https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884' target='_blank'>
+                copy: <a href='https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884' target='_blank' rel="noreferrer">
                     A Sunday on La Grande Jatte by George Seurat
                 </a>.
                 I was intrigued by the painting when I saw it at the Art Institute of Chicago.

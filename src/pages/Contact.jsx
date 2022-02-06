@@ -38,7 +38,7 @@ const Contact = () => {
                 <AlignCenterContainer><StyledImage src={Headshot} height={'20rem'} /></AlignCenterContainer>
                 <div>
                     <StyledText>
-                        I'm a front-end engineer currently working at <a href="https://www.electric.ai" target="_blank">Electric AI</a>.
+                        I'm a front-end engineer currently working at <a href="https://www.electric.ai" target="_blank" rel="noreferrer">Electric AI</a>.
                         During my free time, I enjoy yoga, ballet, painting and taking long walks.
                         I'm interested in learning more about UX design. Currently, I'm looking for civic tech volunteer opportunities. 
                     </StyledText>
@@ -47,10 +47,10 @@ const Contact = () => {
                     </StyledText>
                     <StyledIconContainer>
                         <IconContainer>
-                            <a href='https://www.linkedin.com/in/jennyhui93' target='_blank'><FontAwesomeIcon size='2x' icon={['fab', 'linkedin']} /></a>
+                            <a href='https://www.linkedin.com/in/jennyhui93' target='_blank' rel="noreferrer"><FontAwesomeIcon size='2x' icon={['fab', 'linkedin']} /></a>
                         </IconContainer>
                         <IconContainer>
-                            <a href='https://www.github.com/jennyhuii' target='_blank'><FontAwesomeIcon size='2x' icon={['fab', 'github-square']} /></a>
+                            <a href='https://www.github.com/jennyhuii' target='_blank' rel="noreferrer"><FontAwesomeIcon size='2x' icon={['fab', 'github-square']} /></a>
                         </IconContainer>
                     </StyledIconContainer>
                 </div>
