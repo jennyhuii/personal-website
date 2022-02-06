@@ -6,7 +6,8 @@ import {
     StyledContentContainer,
     StyledImage,
 } from '../constants/Styles';
-import AllCampaign from '../images/designs/dam-all-campaign.png';
+import AllCampaigns from '../images/designs/dam-all-campaign.png';
+import AllBudgetSilos from '../images/designs/dam-all-budget-silos.png';
 
 const StyledText = styled.p`
     text-align:left;
@@ -25,7 +26,7 @@ const Designs = () => {
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <StyledImageContainer>
-                <StyledImage src={AllCampaign} height={'20rem'} />
+                <StyledImage src={AllCampaigns} height={'20rem'} />
                 </StyledImageContainer>
                 <div>
                     <StyledText>
@@ -46,7 +47,7 @@ const Designs = () => {
                 </div>
             </StyledContentContainer>
             <StyledContentContainer>
-            <StyledImage src={AllCampaign} height={'20rem'} />
+            <StyledImage src={AllBudgetSilos} height={'20rem'} />
                 <div>
                     <StyledText>
                         Data integrity, transparency, and ease of use were the main goals when designing Digital Ad Manager. When the user

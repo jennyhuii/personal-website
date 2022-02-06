@@ -9,7 +9,7 @@ import {
 } from '../constants/Styles';
 import Paintings from '../images/paintings/paintings.png';
 import MasterCopy from '../images/paintings/mastercopy.png';
-import DigitalAdManager from '../images/designs/digital-ad-manager.png';
+//import DigitalAdManager from '../images/designs/digital-ad-manager.png';
 
 const StyledImageContainer = styled.div`
     padding: 1rem;
