@@ -5,7 +5,6 @@ import {
     StyledContentContainer,
     StyledMainTextContainer,
     StyledText,
-    StyledMainText,
     AlignCenterContainer,
     StyledImage
  } from '../constants/Styles';
@@ -15,7 +14,7 @@ const Home = () => {
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
-                <StyledMainText>Artist & Engineer</StyledMainText>
+                <h4>Artist & Engineer</h4>
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <AlignCenterContainer><StyledImage src={Headshot} height={'20rem'} /></AlignCenterContainer>

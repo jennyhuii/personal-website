@@ -10,9 +10,9 @@ const Footer = () => {
 
     return (
         <StyledFooterContainer>
-            <h3>
-                Built with React
-            </h3>
+            <h4>
+                Designed & Built by Jenny using React
+            </h4>
         </StyledFooterContainer>
     )
 }

@@ -1,42 +1,65 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import styled from 'styled-components';
 import {
     StyledMainContainer,
     StyledContentContainer,
-    StyledImage,
+    StyledImageWithHover,
     StyledMainTextContainer,
-    StyledMainText,
 } from '../constants/Styles';
-import RedLily from '../images/red-lily.png';
-import SundayPicnic from '../images/sunday-picnic.png';
-import WhiteLilies from '../images/white-lilies.png';
-import Sunflowers from '../images/sunflowers.png';
+import Paintings from '../images/paintings/paintings.png';
+import MasterCopy from '../images/paintings/mastercopy.png';
+import DigitalAdManager from '../images/designs/digital-ad-manager.png';
 
 const StyledImageContainer = styled.div`
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem;
     justify-content: center;
+    height: ${props => props.height};;
 `
 
 const Work = () => {
+    const history = useHistory();
+
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
-                <StyledMainText>My Work</StyledMainText>
+                <h1>Hello, I'm Jenny. I'm an artist and an engineer.</h1>
             </StyledMainTextContainer>
             <StyledContentContainer>
-                <StyledImageContainer>
-                    <StyledImage src={WhiteLilies} height={'28rem'} />
-                </StyledImageContainer>
-                <StyledImageContainer>
-                    <StyledImage src={RedLily} height={'28rem'} />
-                </StyledImageContainer>
-                <StyledImageContainer>
-                    <StyledImage src={SundayPicnic} height={'22rem'} />
-                </StyledImageContainer>
-                <StyledImageContainer>
-                    <StyledImage src={Sunflowers} height={'28rem'} />
-                </StyledImageContainer>
+                <div>
+                    <StyledImageContainer height={'21rem'}>
+                        <StyledImageWithHover onClick={() => history.push('/flowers')} src={Paintings} height={'20rem'} hoverHeight={'20.5rem'} />
+                    </StyledImageContainer>
+                    <a href={'/flowers'}>
+                        <h3>
+                            Abstract Flower Paintings, Acrylic on Canvas
+                        </h3>
+                    </a>
+                </div>
+                <div>
+                    <StyledImageContainer height={'21rem'}>
+                        <StyledImageWithHover onClick={() => history.push('/master-copy')} src={MasterCopy} height={'20rem'} hoverHeight={'20.5rem'} />
+                    </StyledImageContainer>
+                    <a href={'/master-copy'}>
+                        <h3>
+                            A Sunday on La Grande Jatte (Master Copy), Oil on Wood Panel
+                        </h3>
+                    </a>
+                </div>
             </StyledContentContainer>
+            <br></br>
+            <br></br>
+            <br></br>
+            {/* <StyledContentContainer>
+                <div>
+                    <StyledImageContainer height={'22rem'}>
+                        <StyledImageWithHover onClick={() => history.push('/designs')} src={DigitalAdManager} height={'21rem'} hoverHeight={'21.5rem'} />
+                    </StyledImageContainer>
+                    <h3>
+                        Digital Ad Manager, Product Design
+                    </h3>
+                </div>
+            </StyledContentContainer> */}
         </StyledMainContainer>
     )
 }

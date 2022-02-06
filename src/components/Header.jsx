@@ -15,7 +15,7 @@ const StyledLink = styled(NavLink)`
     &:hover {
         text-decoration:none;
         &>h3 {
-        color: #bed4e9;
+        color: #666699;
         padding-bottom: 5px;
         border-bottom-style: solid;
         }
@@ -27,37 +27,6 @@ const StyledLink = styled(NavLink)`
             width: fit-content;
         }
     }
-`
-
-const StyledAnchor = styled.a`
-    text-decoration:none;
-    &:hover {
-        text-decoration:none;
-        &>h3 {
-        color: #bed4e9;
-        padding-bottom: 5px;
-        border-bottom-style: solid;
-        }
-      }
-    &.active {
-        &>h3 {
-            padding-bottom: 5px;
-            border-bottom-style: solid;
-            width: fit-content;
-        }
-    }
-`
-
-const StyledHomeLink = styled(NavLink)`
-    text-decoration:none;
-    &:hover {
-        text-decoration:none;
-        &>h1 {
-        color: #bed4e9;
-        padding-bottom: 5px;
-        border-bottom-style: solid;
-        }
-      }
 `
 
 const StyledList = styled.ul`
@@ -76,11 +45,10 @@ const Header = () => {
 
     return (
         <StyledHeaderContainer>
-            <StyledHomeLink to="/"><h1>Jenny Hui</h1></StyledHomeLink>
+            <h1> </h1>
             <StyledList>
                 <StyledListItem><StyledLink to="/my-work"><h3>My Work</h3></StyledLink></StyledListItem>
-                <StyledListItem><StyledAnchor href='https://www.github.com/jennyhuii'><h3>Github</h3></StyledAnchor></StyledListItem>
-                <StyledListItem><StyledAnchor href='https://www.linkedin.com/in/jennyhui93'><h3>LinkedIn</h3></StyledAnchor></StyledListItem>
+                <StyledListItem><StyledLink to="/contact"><h3>Contact</h3></StyledLink></StyledListItem>
             </StyledList>
         </StyledHeaderContainer>
     )

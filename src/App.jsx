@@ -10,8 +10,11 @@ import {
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/Home';
+import Contact from './pages/Contact';
 import Work from './pages/Work';
+import Designs from './pages/Designs';
+import Flowers from './pages/Flowers';
+import MasterCopy from './pages/MasterCopy';
 
 
 library.add(fab, faLinkedin, faGithubSquare)
@@ -28,6 +31,7 @@ const HeaderContainer = styled.div`
 const MainContainer = styled.div`
   justify-self: stretch;
   padding: 1rem;
+  min-height: 30rem;
 `
 
 const FooterContainer = styled.div`
@@ -46,10 +50,22 @@ const App = () => {
           </HeaderContainer>
           <MainContainer>
             <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/my-work">
               <Work />
+            </Route>
+            <Route exact path="/my-work">
+              <Work />
+            </Route>
+            <Route exact path="/contact">
+              <Contact />
+            </Route>
+            <Route exact path="/designs">
+              <Designs />
+            </Route>
+            <Route exact path="/flowers">
+              <Flowers />
+            </Route>
+            <Route exact path="/master-copy">
+              <MasterCopy />
             </Route>
           </MainContainer>
           <FooterContainer>
