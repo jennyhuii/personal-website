@@ -9,6 +9,7 @@ import {
 } from '../constants/Styles';
 import Paintings from '../images/paintings/paintings.png';
 import MasterCopy from '../images/paintings/mastercopy.png';
+import NationalPark from '../images/paintings/national-parks.png';
 //import DigitalAdManager from '../images/designs/digital-ad-manager.png';
 
 const StyledImageContainer = styled.div`
@@ -47,6 +48,21 @@ const Work = () => {
                     </a>
                 </div>
             </StyledContentContainer>
+            <br></br>
+            <br></br>
+            <br></br>
+            <StyledContentContainer>
+                <div>
+                    <StyledImageContainer height={'21rem'}>
+                        <StyledImageWithHover onClick={() => history.push('/national-parks')} src={NationalPark} height={'20rem'} hoverHeight={'20.5rem'} />
+                    </StyledImageContainer>
+                    <a href={'/national-parks'}>
+                        <h3>
+                            National Park Collection, Acrylic on Canvas
+                        </h3>
+                    </a>
+                </div>
+                </StyledContentContainer>
             <br></br>
             <br></br>
             <br></br>

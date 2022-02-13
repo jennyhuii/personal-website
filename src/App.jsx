@@ -15,6 +15,7 @@ import Work from './pages/Work';
 import Designs from './pages/Designs';
 import Flowers from './pages/Flowers';
 import MasterCopy from './pages/MasterCopy';
+import NationalParks from './pages/NationalParks';
 
 
 library.add(fab, faLinkedin, faGithubSquare)
@@ -66,6 +67,9 @@ const App = () => {
             </Route>
             <Route exact path="/master-copy">
               <MasterCopy />
+            </Route>
+            <Route exact path="/national-parks">
+              <NationalParks />
             </Route>
           </MainContainer>
           <FooterContainer>
