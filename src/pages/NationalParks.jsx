@@ -33,7 +33,8 @@ const NationalParks = () => {
                 </StyledImageContainer>
             </StyledContentContainer>
             <StyledText>
-                I am currently working on paintings of US National Parks. Above is Joshua Tree in California. More to come...
+                I am currently working on paintings of US National Parks that I have visited. 
+                Above is Joshua Tree in California. More to come...
             </StyledText>
         </StyledMainContainer>
     )
