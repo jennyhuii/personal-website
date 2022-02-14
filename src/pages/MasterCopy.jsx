@@ -16,12 +16,20 @@ const StyledContentContainer = styled.div`
     align-content: center;
 `
 
-const StyledText = styled.h4`
+const StyledText = styled.p`
+@media (min-width: 800px){
     padding-left: 15rem;
     padding-right: 15rem;
+    text-align: left;
+}
+@media (max-width: 800px) {
+    text-align: left;
+}
 `
 
 const MasterCopy = () => {
+    const isSmallScreen = window.screen.width < 800;
+    const imageHeight = isSmallScreen ? '13rem' : '35rem';
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
@@ -29,7 +37,7 @@ const MasterCopy = () => {
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <StyledImageContainer>
-                    <StyledImage src={SundayPicnic} height={'35rem'} />
+                    <StyledImage src={SundayPicnic} height={imageHeight} />
                 </StyledImageContainer>
             </StyledContentContainer>
             <StyledText>

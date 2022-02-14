@@ -15,17 +15,33 @@ const StyledImageContainer = styled.div`
 `
 
 const StyledContentContainer = styled.div`
+@media (min-width: 800px){
     display: grid;
     grid-gap: 0rem;
     grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 800px) {
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: repeat(1, 1fr);
+}
 `
 
-const StyledText = styled.h4`
+const StyledText = styled.p`
+@media (min-width: 800px){
     padding-left: 15rem;
     padding-right: 15rem;
+    text-align: left;
+}
+@media (max-width: 800px) {
+    text-align: left;
+}
 `
 
 const Flowers = () => {
+    const isSmallScreen = window.screen.width < 800;
+    const imageHeight = isSmallScreen ? '20rem' : '28rem';
+
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
@@ -33,13 +49,13 @@ const Flowers = () => {
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <StyledImageContainer>
-                    <StyledImage src={WhiteLilies} height={'28rem'} />
+                    <StyledImage src={WhiteLilies} height={imageHeight} />
                 </StyledImageContainer>
                 <StyledImageContainer>
-                    <StyledImage src={RedLily} height={'28rem'} />
+                    <StyledImage src={RedLily} height={imageHeight} />
                 </StyledImageContainer>
                 <StyledImageContainer>
-                    <StyledImage src={BlueIris} height={'28rem'} />
+                    <StyledImage src={BlueIris} height={imageHeight} />
                 </StyledImageContainer>
             </StyledContentContainer>
             <StyledText>
