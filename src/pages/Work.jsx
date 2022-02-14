@@ -21,9 +21,9 @@ const StyledImageContainer = styled.div`
 const Work = () => {
     const history = useHistory();
     const isSmallScreen = window.screen.width < 800;
-    const containerHeight = isSmallScreen ? '12rem' : '21rem';
-    const imageHeight = isSmallScreen ? '11rem' : '20rem';
-    const hoverHeight = isSmallScreen ? '11.5rem' : '20.5rem';
+    const containerHeight = isSmallScreen ? '13rem' : '21rem';
+    const imageHeight = isSmallScreen ? '12rem' : '20rem';
+    const hoverHeight = isSmallScreen ? '12.5rem' : '20.5rem';
 
     return (
         <StyledMainContainer>
