@@ -39,7 +39,7 @@ const Contact = () => {
                 <div>
                     <StyledText>
                         I'm a front-end engineer currently working at <a href="https://www.electric.ai" target="_blank" rel="noreferrer">Electric AI</a>.
-                        During my free time, I enjoy yoga, ballet, painting and taking long walks.
+                        During my free time, I enjoy yoga, ballet, and painting.
                         I'm interested in learning more about user experience design and research. Currently, I'm looking for civic tech volunteer opportunities. 
                     </StyledText>
                     <StyledText>
