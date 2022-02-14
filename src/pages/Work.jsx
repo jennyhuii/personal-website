@@ -21,6 +21,8 @@ const StyledImageContainer = styled.div`
 const Work = () => {
     const history = useHistory();
 
+    console.log(window.screen.width)
+
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
