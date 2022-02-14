@@ -20,8 +20,10 @@ const StyledImageContainer = styled.div`
 
 const Work = () => {
     const history = useHistory();
-
-    console.log(window.screen.width)
+    const isSmallScreen = window.screen.width < 800;
+    const containerHeight = isSmallScreen ? '12rem' : '21rem';
+    const imageHeight = isSmallScreen ? '11rem' : '20rem';
+    const hoverHeight = isSmallScreen ? '11.5rem' : '20.5rem';
 
     return (
         <StyledMainContainer>
@@ -30,8 +32,8 @@ const Work = () => {
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <div>
-                    <StyledImageContainer height={'21rem'}>
-                        <StyledImageWithHover onClick={() => history.push('/flowers')} src={Paintings} height={'20rem'} hoverHeight={'20.5rem'} />
+                    <StyledImageContainer height={containerHeight}>
+                        <StyledImageWithHover onClick={() => history.push('/flowers')} src={Paintings} height={imageHeight} hoverHeight={hoverHeight} />
                     </StyledImageContainer>
                     <a href={'/flowers'}>
                         <h3>
@@ -40,8 +42,8 @@ const Work = () => {
                     </a>
                 </div>
                 <div>
-                    <StyledImageContainer height={'21rem'}>
-                        <StyledImageWithHover onClick={() => history.push('/master-copy')} src={MasterCopy} height={'20rem'} hoverHeight={'20.5rem'} />
+                    <StyledImageContainer height={containerHeight}>
+                        <StyledImageWithHover onClick={() => history.push('/master-copy')} src={MasterCopy} height={imageHeight} hoverHeight={hoverHeight} />
                     </StyledImageContainer>
                     <a href={'/master-copy'}>
                         <h3>
@@ -55,8 +57,8 @@ const Work = () => {
             <br></br>
             <StyledContentContainer>
                 <div>
-                    <StyledImageContainer height={'21rem'}>
-                        <StyledImageWithHover onClick={() => history.push('/national-parks')} src={NationalPark} height={'20rem'} hoverHeight={'20.5rem'} />
+                    <StyledImageContainer height={containerHeight}>
+                        <StyledImageWithHover onClick={() => history.push('/national-parks')} src={NationalPark} height={imageHeight} hoverHeight={hoverHeight} />
                     </StyledImageContainer>
                     <a href={'/national-parks'}>
                         <h3>
@@ -64,7 +66,7 @@ const Work = () => {
                         </h3>
                     </a>
                 </div>
-                </StyledContentContainer>
+            </StyledContentContainer>
             <br></br>
             <br></br>
             <br></br>
