@@ -12,7 +12,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import Work from './pages/Work';
-import Designs from './pages/Designs';
+import Designs from './pages/DigitalAdManager';
 import Flowers from './pages/Flowers';
 import MasterCopy from './pages/MasterCopy';
 import NationalParks from './pages/NationalParks';
@@ -59,7 +59,7 @@ const App = () => {
             <Route exact path="/contact">
               <Contact />
             </Route>
-            <Route exact path="/designs">
+            <Route exact path="/digital-ad-manager">
               <Designs />
             </Route>
             <Route exact path="/flowers">

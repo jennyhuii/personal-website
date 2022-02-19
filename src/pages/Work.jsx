@@ -10,7 +10,7 @@ import {
 import Paintings from '../images/paintings/paintings.png';
 import MasterCopy from '../images/paintings/mastercopy.png';
 import NationalPark from '../images/paintings/national-parks.png';
-//import DigitalAdManager from '../images/designs/digital-ad-manager.png';
+import DigitalAdManager from '../images/designs/digital-ad-manager.png';
 
 const StyledImageContainer = styled.div`
     padding: 1rem;
@@ -66,20 +66,18 @@ const Work = () => {
                         </h3>
                     </a>
                 </div>
+                <div>
+                    <StyledImageContainer height={containerHeight}>
+                        <StyledImageWithHover onClick={() => history.push('/digital-ad-manager')} src={DigitalAdManager} height={imageHeight} hoverHeight={hoverHeight} />
+                    </StyledImageContainer>
+                    <h3>
+                        Digital Ad Manager, Product Design & Engineering
+                    </h3>
+                </div>
             </StyledContentContainer>
             <br></br>
             <br></br>
             <br></br>
-            {/* <StyledContentContainer>
-                <div>
-                    <StyledImageContainer height={'22rem'}>
-                        <StyledImageWithHover onClick={() => history.push('/designs')} src={DigitalAdManager} height={'21rem'} hoverHeight={'21.5rem'} />
-                    </StyledImageContainer>
-                    <h3>
-                        Digital Ad Manager, Product Design
-                    </h3>
-                </div>
-            </StyledContentContainer> */}
         </StyledMainContainer>
     )
 }
