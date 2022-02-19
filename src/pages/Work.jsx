@@ -43,11 +43,11 @@ const Work = () => {
                 </div>
                 <div>
                     <StyledImageContainer height={containerHeight}>
-                        <StyledImageWithHover onClick={() => history.push('/master-copy')} src={MasterCopy} height={imageHeight} hoverHeight={hoverHeight} />
+                        <StyledImageWithHover onClick={() => history.push('/digital-ad-manager')} src={DigitalAdManager} height={imageHeight} hoverHeight={hoverHeight} />
                     </StyledImageContainer>
-                    <a href={'/master-copy'}>
+                    <a href={'/digital-ad-manager'}>
                         <h3>
-                            A Sunday on La Grande Jatte (Master Copy), Oil on Wood Panel
+                            Digital Ad Manager, Product Design & Engineering
                         </h3>
                     </a>
                 </div>
@@ -68,11 +68,13 @@ const Work = () => {
                 </div>
                 <div>
                     <StyledImageContainer height={containerHeight}>
-                        <StyledImageWithHover onClick={() => history.push('/digital-ad-manager')} src={DigitalAdManager} height={imageHeight} hoverHeight={hoverHeight} />
+                        <StyledImageWithHover onClick={() => history.push('/master-copy')} src={MasterCopy} height={imageHeight} hoverHeight={hoverHeight} />
                     </StyledImageContainer>
-                    <h3>
-                        Digital Ad Manager, Product Design & Engineering
-                    </h3>
+                    <a href={'/master-copy'}>
+                        <h3>
+                            A Sunday on La Grande Jatte (Master Copy), Oil on Wood Panel
+                        </h3>
+                    </a>
                 </div>
             </StyledContentContainer>
             <br></br>

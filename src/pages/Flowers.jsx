@@ -59,12 +59,12 @@ const Flowers = () => {
                 </StyledImageContainer>
             </StyledContentContainer>
             <StyledText>
-                    This collection features close-up views of one or two flowers.
-                    My early pieces were more intricate and colorful.
-                    These paintings are very different in terms of style and composition.
-                    For each painting, I wanted to showcase one prominent color.
-                    Each petal has its details and uniqueness, not one taking another's attention.
-                </StyledText>
+                This collection features close-up views of one or two flowers.
+                My early pieces were more intricate and colorful.
+                These paintings are very different in terms of style and composition.
+                For each painting, I wanted to showcase one prominent color.
+                Each petal has its details and uniqueness, not one taking another's attention.
+            </StyledText>
         </StyledMainContainer>
     )
 }
