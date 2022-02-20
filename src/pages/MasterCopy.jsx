@@ -33,7 +33,7 @@ const MasterCopy = () => {
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
-                <h2>Master Copy of "A Sunday on La Grande Jatte"</h2>
+                <h1>Master Copy of "A Sunday on La Grande Jatte"</h1>
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <StyledImageContainer>

@@ -45,7 +45,7 @@ const Flowers = () => {
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
-                <h2>Abstract Flowers</h2>
+                <h1>Abstract Flowers</h1>
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <StyledImageContainer>

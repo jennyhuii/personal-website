@@ -33,7 +33,7 @@ const NationalParks = () => {
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
-                <h2>National Park Collection</h2>
+                <h1>National Park Collection</h1>
             </StyledMainTextContainer>
             <StyledContentContainer>
                 <StyledImageContainer>

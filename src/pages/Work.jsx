@@ -76,9 +76,6 @@ const Work = () => {
                     </a>
                 </div>
             </StyledContentContainer>
-            <br></br>
-            <br></br>
-            <br></br>
         </StyledMainContainer>
     )
 }

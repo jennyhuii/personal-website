@@ -51,7 +51,7 @@ const DigitalAdManager = () => {
     return (
         <StyledMainContainer>
             <StyledMainTextContainer>
-                <h2>Digital Ad Manager</h2>
+                <h1>Digital Ad Manager</h1>
             </StyledMainTextContainer>
             <StyledVideoContainer>
                 <video height={videoHeight} controls autoPlay loop muted>
