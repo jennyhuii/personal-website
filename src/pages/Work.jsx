@@ -54,18 +54,7 @@ const Work = () => {
             </StyledContentContainer>
             <br></br>
             <br></br>
-            <br></br>
             <StyledContentContainer>
-                <div>
-                    <StyledImageContainer height={containerHeight}>
-                        <StyledImageWithHover onClick={() => history.push('/national-parks')} src={NationalPark} height={imageHeight} hoverHeight={hoverHeight} />
-                    </StyledImageContainer>
-                    <a href={'/national-parks'}>
-                        <h3>
-                            National Park Collection, Acrylic on Canvas
-                        </h3>
-                    </a>
-                </div>
                 <div>
                     <StyledImageContainer height={containerHeight}>
                         <StyledImageWithHover onClick={() => history.push('/master-copy')} src={MasterCopy} height={imageHeight} hoverHeight={hoverHeight} />
@@ -73,6 +62,16 @@ const Work = () => {
                     <a href={'/master-copy'}>
                         <h3>
                             A Sunday on La Grande Jatte (Master Copy), Oil on Wood Panel
+                        </h3>
+                    </a>
+                </div>
+                <div>
+                    <StyledImageContainer height={containerHeight}>
+                        <StyledImageWithHover onClick={() => history.push('/national-parks')} src={NationalPark} height={imageHeight} hoverHeight={hoverHeight} />
+                    </StyledImageContainer>
+                    <a href={'/national-parks'}>
+                        <h3>
+                            National Park Collection, Acrylic on Canvas
                         </h3>
                     </a>
                 </div>
