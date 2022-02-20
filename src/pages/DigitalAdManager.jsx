@@ -60,9 +60,10 @@ const DigitalAdManager = () => {
             </StyledVideoContainer>
             <div>
                 <StyledText>
-                    The founder of Cambrya developed an algorithm to optimize progressive political campaign outreach to constituents.
-                    Political campaigns run ads on social media to persuade and reach voters in their district. Traditional advertisements
-                    include TV commercials, mail, etc. Voter outreach methods include cold calling and texting. Those persuasion and
+                    The founder of <a href='https://www.cambrya.co/' target="_blank" rel="noreferrer">Cambrya</a> developed 
+                    an algorithm to optimize progressive political campaign outreach to constituents. Political campaigns run 
+                    ads on social media to persuade and reach voters in their district. Traditional advertisements include 
+                    TV commercials, mail, etc. Voter outreach methods include cold calling and texting. Those persuasion and 
                     outreach techniques are not scalable. Cambrya's ad budget distribution algorithm fits the needs of modern campaigns.
                 </StyledText>
                 <StyledText>
