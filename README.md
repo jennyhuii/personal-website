@@ -1,3 +1,5 @@
 # Jenny's Personal Website
 
-Artist. Designer. Engineer.
+Artist & Engineer
+
+jennyhui.co
