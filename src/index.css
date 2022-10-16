@@ -4,12 +4,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: auto;
-  background-color: #FAF9F6;
+  background-color: #FFFFFF;
   color: #29293D;
 }
 
 div {
-  background-color: #FAF9F6;
+  background-color: #FFFFFF;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

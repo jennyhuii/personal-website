@@ -47,29 +47,10 @@ const App = () => {
       <div>
         <Router>
           <HeaderContainer>
-            <Header />
           </HeaderContainer>
           <MainContainer>
             <Route exact path="/">
               <Work />
-            </Route>
-            <Route exact path="/my-work">
-              <Work />
-            </Route>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
-            <Route exact path="/digital-ad-manager">
-              <Designs />
-            </Route>
-            <Route exact path="/flowers">
-              <Flowers />
-            </Route>
-            <Route exact path="/master-copy">
-              <MasterCopy />
-            </Route>
-            <Route exact path="/national-parks">
-              <NationalParks />
             </Route>
           </MainContainer>
           <FooterContainer>
