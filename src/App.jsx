@@ -8,15 +8,8 @@ import {
   Route
 } from "react-router-dom";
 
-import Header from './components/Header';
 import Footer from './components/Footer';
-import Contact from './pages/Contact';
 import Work from './pages/Work';
-import Designs from './pages/DigitalAdManager';
-import Flowers from './pages/Flowers';
-import MasterCopy from './pages/MasterCopy';
-import NationalParks from './pages/NationalParks';
-
 
 library.add(fab, faLinkedin, faGithubSquare)
 
