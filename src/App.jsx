@@ -7,8 +7,7 @@ import {
   BrowserRouter as Router,
   Route
 } from "react-router-dom";
-
-import Footer from './components/Footer';
+import TimeCapsulePhotoEssay from './pages/TimeCapsulePhotoEssay';
 import Work from './pages/Work';
 
 library.add(fab, faLinkedin, faGithubSquare)
@@ -17,21 +16,10 @@ const theme = {
   main: "black-and-white"
 };
 
-const HeaderContainer = styled.div`
-  padding: 0.75rem;
-  height: 90px;
-`
-
 const MainContainer = styled.div`
   justify-self: stretch;
   padding: 1rem;
   min-height: 30rem;
-`
-
-const FooterContainer = styled.div`
-  justify-self: stretch;
-  padding-bottom: 1rem;
-  height: 70px;
 `
 
 const App = () => {
@@ -39,16 +27,14 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div>
         <Router>
-          <HeaderContainer>
-          </HeaderContainer>
           <MainContainer>
             <Route exact path="/">
               <Work />
             </Route>
+            <Route exact path="/time-capsule">
+              <TimeCapsulePhotoEssay />
+            </Route>
           </MainContainer>
-          <FooterContainer>
-            <Footer />
-          </FooterContainer>
         </Router>
       </div>
     </ThemeProvider>
