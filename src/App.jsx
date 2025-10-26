@@ -4,9 +4,12 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import TimeCapsulePhotoEssay from "./pages/TimeCapsulePhotoEssay";
+import TimeCapsulePhotoEssay from "./archived/TimeCapsulePhotoEssay";
 import Work from "./pages/Work";
-import NYUMastersThesis from "./pages/NYUMastersThesis";
+import About from "./pages/About";
+import NYUMastersThesis from "./archived/NYUMastersThesis";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 library.add(fab, faLinkedin, faGithubSquare);
 
@@ -25,9 +28,13 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div>
         <Router>
+          <Header />
           <MainContainer>
-            <Route exact path="/">
+            <Route exact path="/work">
               <Work />
+            </Route>
+            <Route exact path="/about">
+              <About />
             </Route>
             <Route exact path="/nyu-thesis">
               <NYUMastersThesis />
@@ -35,7 +42,11 @@ const App = () => {
             <Route exact path="/time-capsule">
               <TimeCapsulePhotoEssay />
             </Route>
+            <Route exact path="/">
+              <Work />
+            </Route>
           </MainContainer>
+          <Footer />
         </Router>
       </div>
     </ThemeProvider>
